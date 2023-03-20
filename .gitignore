@@ -4,3 +4,5 @@ data/images/
 *.txt
 
 *.hdf5
+
+*.env
