@@ -1,7 +1,7 @@
 data/images/
 
 *.json
-*.txt
+api_key_mapbox.txt
 
 *.hdf5
 
