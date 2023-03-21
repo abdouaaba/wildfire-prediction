@@ -7,8 +7,8 @@ from io import BytesIO
 from dotenv import load_dotenv
 
 
-from keras.utils import load_img, img_to_array
-from keras.models import load_model
+from tensorflow.keras.preprocessing.image import load_img, img_to_array
+from tensorflow.keras.models import load_model
 
 # Load the pre-trained model and image
 def load_data(model_path, image_path):
