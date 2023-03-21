@@ -1,2 +1,5 @@
+tensorflow
+numpy
 python-dotenv
-keras
+Pillow
+requests
