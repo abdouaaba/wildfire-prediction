@@ -29,10 +29,10 @@ def predict(model, image):
 
 # Create the Streamlit app
 def main():
-    st.title("Image Classification")
+    st.title("Wildfire Risk Prediction")
 
     # Allow user to upload an image file
-    uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
+    uploaded_file = st.file_uploader("Or choose an image...", type=["jpg", "jpeg", "png"])
 
     with st.sidebar:
         st.header("Input Coordinates")
