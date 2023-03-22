@@ -43,9 +43,9 @@ def main():
 
     # Wait for the button to be clicked
     if button_clicked:
-        load_dotenv()
+        # load_dotenv()
         # Predict using coordinates
-        api_key = str(os.environ.get("api_key"))
+        api_key = st.secrets["api_key"]
         center = str(longitude) + ',' + str(latitude)
         rest = ',15,0/350x350?access_token=' + api_key + '&logo=false&attribution=false'
         url = 'https://api.mapbox.com/styles/v1/mapbox/satellite-v9/static/' + center + rest
@@ -60,7 +60,7 @@ def main():
         image = image / 255.0
 
         # Load and classify the image using the pre-trained model
-        model, _ = load_data("first_model.hdf5", "dummy.jpg")
+        model, _ = load_data("first_model.h5", "dummy.jpg")
         result = predict(model, image)
 
         # Display the classification result
@@ -77,7 +77,7 @@ def main():
         image /= 255.0
 
         # Load and classify the image using the pre-trained model
-        model, _ = load_data("first_model.hdf5", "dummy.jpg")
+        model, _ = load_data("first_model.h5", "dummy.jpg")
         result = predict(model, image)
 
         # Display the classification result
