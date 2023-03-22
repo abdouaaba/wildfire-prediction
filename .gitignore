@@ -4,6 +4,5 @@ data/images/
 api_key_mapbox.txt
 
 *.hdf5
-*.h5
 
 *.env
