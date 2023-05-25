@@ -3,6 +3,7 @@ data/images/
 *.json
 api_key_mapbox.txt
 
+*.h5
 *.hdf5
 
 *.env
